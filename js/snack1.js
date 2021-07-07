@@ -1,0 +1,20 @@
+/* Il software deve chiedere per 5 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti.
+Esegui questo programma in due versioni, con il for e con il while.
+ */
+
+var exsercise = document.getElementById("exsercise");
+
+var sum = 0;
+// richiedere per 5 volte un numero
+ for (var i = 0; i < 5; i++) {
+    var number = parseInt(prompt("Inserisci un numero","1"));
+    if (!isNaN(number)) {
+    //somma dei numeri inseriti 
+        sum += number;
+    }  else {
+        alert("non hai inserito dei numeri");
+    }
+}
+//stampa su html
+exsercise.innerHTML = "la somma dei numeri da te inseriti e: " + sum;
