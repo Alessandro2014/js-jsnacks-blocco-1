@@ -18,4 +18,3 @@ if (number % 2 === 0) {
     var sum = number + 1;
     exsercise.innerHTML = "Il numero pari successivo al tuo è: " + sum;
 }
-
