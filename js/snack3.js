@@ -1,6 +1,12 @@
 /* Generatore di “nomi cognomi” casuali:
    prendendo una lista di nomi e una lista di cognomi,
-   Gatsby vuole generare una falsa lista di 3 invitati. */
+   Gatsby vuole generare una falsa lista di 3 invitati. 
+   
+   1 creare 2 array con contenuto e uno vuoto per array random
+   2 generare numero random in base a lunghezza array
+   3 generare var per unire i numeri al nome e poi cognome
+   4 generare ulteriore var per unire le stringhe del nome e cognome falsi
+   5 verifica che nella lista non si formino gli stessi accoppiamenti più volte*/
 
 var exsercise = document.getElementById("exsercise");
 
