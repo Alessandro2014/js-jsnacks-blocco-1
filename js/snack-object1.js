@@ -9,7 +9,7 @@ BONUS: stampare la palla tramite una funzione */
 
 var exsercise = document.getElementById("exsercise");
 
-var palla = { name : "pallone", peso : 10 };
+var palla = { nome : "pallone", peso : 10 };
  
 var nuovoPeso = prompt("scegli il peso della palla");
 while (!nuovoPeso || isNaN(nuovoPeso) || nuovoPeso.trim() === " ") {
@@ -25,7 +25,7 @@ console.table(palla);
 function printObject(obj, targetElement){
     var content = " ";
     for (var key in obj) {
-        content += key + ": " + obj[key];
+        content += key + ": " + obj[key] + "<br> ";
     }
     targetElement.innerHTML = content;
 } 
