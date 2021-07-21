@@ -28,7 +28,7 @@ var giocatori = [
 
 
 for (var i = 0; i < giocatori.length; i++) {
-    giocatoriContent = giocatori[i];
+    var giocatoriContent = giocatori[i];
     giocatoriContent.punti = getRandomNumber(1, 50);
     giocatoriContent.falli = getRandomNumber(1, 50);
 
