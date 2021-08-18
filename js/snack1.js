@@ -23,17 +23,18 @@ var sum = 0;
 
 
         //  WHILE
-var i = 0;
-while(i < 5){
-    var number = parseInt(prompt("Inserisci un numero","1"));
-    if (!isNaN(number)) {
-    //somma dei numeri inseriti 
-        sum += number;
-    }  else {
-        alert("non hai inserito dei numeri");
-    }
-    i++;
-}
+        var sum = 0;
+        var i = 0;
+        while(i < 5){
+            var number = parseInt(prompt("Inserisci un numero","1"));
+            if (!isNaN(number)) {
+            //somma dei numeri inseriti 
+                sum += number;
+            }  else {
+                alert("non hai inserito dei numeri");
+            }
+            i++;
+        }
 
 //STAMPA SU HTML
 exsercise.innerHTML = "La somma dei numeri da te inseriti e: " + sum;
